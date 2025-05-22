@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="py-3 bg-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <h2 class="text-center dark-red mb-2">School Bus Routes</h2>
+                <hr class="dark-red mb-4" style="height: 2px;">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8">
+                        <ul class="text-secondary text-center list-unstyled">
+                            <li class="mb-3">THIKA SUPER-HIGHWAY ROUTE</li>
+                            <li class="mb-3">MASHINANI-KIRATINA ROUTE</li>
+                            <li class="mb-3">NORTHLANDS-RUAI ROUTE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-4 bg-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <p class="text-secondary text-start">
+                    Our school offers a well-organized and reliable transport service that ensures students arrive safely
+                    and on time. With clearly designated bus routes covering key areas, our fleet of school buses is managed
+                    by professional and friendly drivers who prioritize safety and punctuality. The buses are well-maintained,
+                    clean, and equipped to provide a comfortable ride for students.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
+
+{% block page_image %}
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/bus.png') }}" 
+         class="img-fluid w-100" 
+         alt="School Bus" 
+         style="max-height: 500px; object-fit: cover;">
+</div>
+{% endblock %}

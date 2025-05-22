@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section id="welcome" class="py-5 bg-white">
+    <div class="container">
+        <div class="text-left">
+            <h2 class="dark-red mb-3">Welcome to Karuguru Tech Academy, Nairobi.</h2>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left;">
+                Welcome to Karuguru Tech Academy where young minds begin their journey toward a bright future.
+                From nurturing foundational skills in Primary to building confidence and innovation in Junior Secondary, 
+                we empower every learner to shine. Join a vibrant, values-driven environment where excellence, 
+                creativity, and growth are part of everyday learning.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block page_image %}
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/gate.png') }}" class="img-fluid w-100" alt="Wall Image" style="max-height: 500px; object-fit: cover;">
+</div>
+{% endblock %}

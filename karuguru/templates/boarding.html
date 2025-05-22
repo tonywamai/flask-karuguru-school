@@ -1,0 +1,111 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <section class="py-3 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-3 dark-red">Boarding that suits your needs</h1>
+                    <p class="mt-4 text-secondary text-start">
+                        Our Boarding School community offers an exceptional, well-rounded education.
+                        Every student is provided with clear behavioral expectations, 
+                        a nurturing learning environment, and a variety of engaging weekend activities set within the Karuguru region.
+                        Boarding teachers and supervising staff create a safe, secure atmosphere every day,
+                        ensuring that students enjoy a top-tier experience both during school hours and in 
+                        the comfort of the boarding home.
+                    </p>
+
+                    <h5 class="dark-red mb-3 mt-4">Why choose our boarding school</h5>
+                    <p class="mt-4 text-secondary text-start">
+                        Boarding students benefit from after-school study support and exclusive out-of-hours
+                        access to the School's facilities. Our young residents are welcomed into boarding 
+                        life and positively contribute to their community while also enjoying additional
+                        time with their peers.    
+                    </p>
+                    <p class="mt-4 text-secondary text-start">
+                        At our School, the boarding environment cultivates discipline, independent learning skills,
+                        and respect for others residing in student accommodation. After homework is completed, 
+                        students may enjoy their free time with friends in the comfort of the boarding home 
+                        and build life-long friendships that last beyond their school years. 
+                    </p>
+                    <p class="mt-4 text-secondary text-start">
+                        Boarders learn under direct supervision of experienced educators and House Supervisors. 
+                        A committed team of adults attends to students around the clock. 
+                        They create an extended school family, and foster various values in boarding students, 
+                        including independence, a sense of responsibility, community spirit, organisation, 
+                        and resilience, developing children into bright, young individuals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boarding Activities Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="dark-red text-start mb-3">Boarding Activities</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Text column -->
+                <div class="col-12 col-md-8 mb-4 mb-md-0">
+                    <p class="text-secondary text-start">
+                        Our school offers a vibrant and dynamic boarding experience where students thrive
+                        both academically and socially. During weekends, the boarding side comes alive with
+                        exciting activities that cater to diverse interests. Students gather
+                        for movie nights, enjoy popular films with friends, and take part in energetic
+                        dance sessions that keep everyone active and entertained. On Sundays,
+                        the community participates in uplifting church services, fostering a spirit 
+                        of togetherness and reflection. Sports enthusiasts engage in friendly matches,
+                        showcasing their talents and teamwork. These activities, along with many others,
+                        ensure that every weekend is filled with fun, relaxation, and personal growth.
+                    </p>
+                </div>
+                <!-- Image column -->
+                <div class="col-12 col-md-4">
+                    <img src="{{ url_for('static', filename='images/sports.png') }}" 
+                         class="img-fluid w-100" 
+                         alt="Boarding Activities"
+                         style="width: 100%; height: auto; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meals and Services Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="dark-red text-start mb-3">Meals and Other services</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Image column -->
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <img src="{{ url_for('static', filename='images/food.png') }}" 
+                         class="img-fluid w-100" 
+                         alt="Boarding Meals"
+                         style="width: 100%; height: auto; border-radius: 8px;">
+                </div>
+                <!-- Text column -->
+                <div class="col-12 col-md-8">
+                    <p class="text-secondary text-start">
+                        Daily meals are provided to boarders. They are nutritious, healthy and delicious.
+                        Children are regularly consulted to ensure their satisfaction at meal times. 
+                        Breakfast, lunch and dinner is served in the Boarding House Dining Hall during out-of-school hours.
+                        In addition to daily meal provision, the Boarding School also provides special meals at times.
+                        Church services are organised on Sundays for those who would like to attend.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %} 
+
+{% block page_image %}
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/dorm.png') }}" 
+         class="img-fluid w-100" 
+         alt="Boarding School" 
+         style="max-height: 500px; object-fit: cover;">
+</div>
+{% endblock %}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>karuguru school</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .navbar-brand span {
+                font-size: 0.9rem;
+            }
+            .navbar-nav {
+                text-align: center;
+            }
+            .nav-item {
+                margin: 0.5rem 0;
+            }
+            .dropdown-menu {
+                text-align: center;
+            }
+            .btn-danger {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .navbar-brand img {
+                max-height: 40px;
+            }
+            .navbar-brand span {
+                font-size: 0.8rem;
+            }
+            .container-fluid {
+                padding: 0 10px;
+            }
+        }
+
+        /* General responsive improvements */
+        .navbar {
+            padding: 1rem;
+        }
+        
+        .dropdown-menu {
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+        
+        .nav-link {
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #dc3545 !important;
+        }
+        
+        .main-content-area {
+            padding: 2rem 1rem;
+        }
+        
+        footer {
+            background-color: #343a40;
+            padding: 2rem 1rem;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="tm-container-1340px has-side-panel side-panel-right">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="{{ url_for('main.home') }}">
+                <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="School Logo" class="img-fluid me-2" style="max-height: 50px;">
+                <span class="fw-bold">
+                    KARUGURU TECH<br>
+                    ACADEMY
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="schoolDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our School
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="schoolDropdown">
+                            <li><a class="dropdown-item" href="{{ url_for('main.about') }}">About</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Education
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <li><a class="dropdown-item" href="{{ url_for('main.primary_school') }}">Primary School</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('main.upper_school') }}">Upper School</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('main.junior_secondary') }}">Junior Secondary</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="{{ url_for('main.boarding') }}">Boarding</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="{{ url_for('main.admissions') }}">Admission and fee</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="schoolLifeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            School Life
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="schoolLifeDropdown">
+                            <li><a class="dropdown-item" href="{{ url_for('main.bus_routes') }}">Bus Routes</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('main.school_uniform') }}">School Uniform</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('main.clubs') }}">Clubs</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('main.sports') }}">Sports</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a class="btn btn-danger" href="#contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid p-0">
+        {% block page_image %}
+        <img src="{{ url_for('static', filename='images/web.png') }}" class="img-fluid w-100" alt="Wall Image">
+        {% endblock %}
+    </div>
+
+    <div class="main-content-area">
+        {% block content %}
+        <!-- Content will be injected here by child templates -->
+        {% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="text-white p-4 text-center">
+        <p>Contact us at: karugurufs@yahoo.com</p>
+        <p>Facebook at: karuguru junior tech academy</p>
+        <p>Phone: +254 722 325  303</p>
+        <p>Address: P.O. Box 384, Ruaraka, NAIROBI.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

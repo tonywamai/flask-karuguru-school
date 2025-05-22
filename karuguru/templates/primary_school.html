@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section id="welcome" class="py-2 bg-white">
+    <div class="container">
+        <div class="text-left">
+            <h2 class="dark-red mb-3">A Premier Choice for Primary Education</h2>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left;">
+                At our Primary School, we provide a nurturing and dynamic
+                environment where every child is empowered to flourish. From Play Group to Class 3,
+                students are supported with personalised attention, a broad curriculum, and engaging activities
+                designed to inspire a lifelong love of learning. We celebrate the individuality of each learner while
+                ensuring they build a strong academic and emotional foundation for future success.
+            </p>
+        </div>
+        <div class="text-left">
+            <h5 class="dark-red mb-3">Primary School Options</h5>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left;">
+                We offer flexible entry points across Play Group, PP1, PP2, Class 1, Class 2, and Class 3.
+                Full-time attendance ensures students benefit from the full range of learning experiences, 
+                while optional aftercare services are available for families who require additional support.
+                Our inclusive environment supports smooth transitions between early years and lower primary levels.
+            </p>
+        </div>
+        <div class="text-left">
+            <h5 class="dark-red mb-3">Our Approach to Learning</h5>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left;">
+                Our Primary School embraces a child-centred, inquiry-based approach to education, encouraging curiosity, independence,
+                and collaboration. We believe children thrive when they are active participants in their learning,
+                guided by teachers who nurture their creativity, critical thinking, and communication skills.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="welcome" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="dark-red mb-3">Student Support and Well-being</h2>
+      <p class="text-left text-secondary mb-4">
+        Our Primary School places strong emphasis on student well-being,
+        ensuring each child feels valued and confident. Teachers provide individualised support, 
+        and social-emotional learning is integrated into daily life. We foster a culture of kindness,
+        respect, and resilience to help students navigate their growing world.
+      </p>
+      <div class="d-flex justify-content-between">
+        <img src="{{ url_for('static', filename='images/1.png') }}" class="img-fluid" style="max-width: 32%; height: auto;">
+        <img src="{{ url_for('static', filename='images/2.png') }}" class="img-fluid" style="max-width: 32%; height: auto;">
+        <img src="{{ url_for('static', filename='images/3.png') }}" class="img-fluid" style="max-width: 32%; height: auto;">
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block page_image %}
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/primary.png') }}" class="img-fluid w-100" alt="board Image" style="max-height: 500px; object-fit: cover;">
+</div>
+{% endblock %}

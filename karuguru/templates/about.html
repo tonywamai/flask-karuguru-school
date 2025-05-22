@@ -1,0 +1,136 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Styled Title -->
+    <div class="text-right border-bottom border-2 pb-2 mb-5" style="border-color: #d2b48c;">
+        <h5 class="text-uppercase fw-bold" style="color: #a71d2a;">A Word From The CEO</h5>
+    </div>
+
+    <div class="row d-flex align-items-start">
+        <!-- Image and Name column -->
+        <div class="col-md-4 text-center order-2 order-md-1">
+            <img src="{{ url_for('static', filename='images/ceo.jpg') }}" 
+                 class="rounded-circle shadow img-fluid mb-3" 
+                 style="max-width: 400px; height: 300px; object-fit: cover;" 
+                 alt="CEO Image">
+            <p class="fw-bold text-danger d-md-none">REV. SAMUEL NDUNGU</p>
+        </div>
+
+        <!-- Text column -->
+        <div class="col-md-8 order-3 order-md-2">
+            <p class="fs-5 mb-4">
+                At Karuguru Academy, we are dedicated to helping every child discover who they are, explore new 
+                opportunities, and reach for their highest goals. I am constantly inspired by the young graduates
+                who leave our school in Kiambu, Ruiru. They step into the world with a global mindset, ready to
+                contribute to society with fairness, respect, and understanding. They reflect the values of a true
+                21st-century education—one that prepares them not only for success but also for meaningful impact.
+            </p>
+            <p class="fs-5">
+                We take great pride in guiding each student on their unique journey and celebrating the milestones they achieve along the way.
+            </p>
+
+            <p class="fw-bold text-danger mt-4 d-none d-md-block">REV. SAMUEL NDUNGU</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <!-- Styled Title -->
+    <div class="text-end border-bottom border-2 pb-2 mb-5" style="border-color: #d2b48c;">
+        <h5 class="text-uppercase fw-bold" style="color: #a71d2a;">A Word From The Director</h5>
+    </div>
+
+    <div class="row d-flex align-items-start">
+        <!-- Text column -->
+        <div class="col-md-8 order-3 order-md-1">
+            <p class="fs-5 mb-4">
+                At the heart of our philosophy is the belief that every student can succeed with the right mindset, 
+                support, and guidance. We are committed to providing a safe, inclusive, and empowering environment 
+                where learners are encouraged to dream big, work hard, and never give up.Education today is not just 
+                about acquiring knowledge; it's about developing the skills, character, and values needed to thrive in
+                an ever-changing world. We place a strong emphasis on discipline, innovation, integrity, and a love for
+                lifelong learning.
+            </p>
+            <p class="fs-5">
+                To our students: know that your future is in your hands. Each day is a new chance to grow,
+                learn, and move closer to your goals. Let your challenges fuel your passion, and let your effort
+                speak louder than your excuses.
+            </p>
+
+            <p class="fw-bold text-danger mt-4 d-none d-md-block">Madam Catherine Ndung'u</p>
+        </div>
+        <!-- Image and Name column -->
+        <div class="col-md-4 text-center order-2 order-md-2">
+            <img src="{{ url_for('static', filename='images/director.jpg') }}" 
+                 class="rounded-circle shadow img-fluid mb-3" 
+                 style="max-width: 350px; height: 300px; object-fit: cover;" 
+                 alt="Director Image">
+            <p class="fw-bold text-danger d-md-none">Madam Catherine Ndung'u</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+
+    <!-- Styled Title -->
+    <div class="text-center border-bottom border-2 pb-2 mb-5" style="border-color: #d2b48c;">
+        <h3 class="text-uppercase fw-bold" style="color: #a71d2a;">History of this school</h3>
+    </div>  
+    <div class="mx-sm-2 mx-md-4 mx-lg-5">     
+        <p class="fs-5">
+            Karuguru Junior Academy School is a well-established learning institution in Kiambu County, Kenya.
+            It has grown over the years to become one of the leading schools in the region that provides quality 
+            education to learners from different backgrounds.
+        </p>
+        <div>
+            <h5 class="text-uppercase text-center fw-bold" style="color: #a71d2a">Founding of the School</h5>
+            <p class="fs-5">
+                The school was established in the year 2006 by Rev. Samuel Ndungu. It started as a primary school with only
+                one classroom (3 students and 2 teachers.)
+            </p>
+        </div>
+        <div>
+            <h5 class="text-uppercase text-center fw-bold" style="color: #a71d2a">Early Development</h5>
+            <p class="fs-5">
+                In its early years, the school faced many challenges, such as a lack of water, a lack of classrooms 
+                and toilets, and a lack of enough capital for development. Despite this, the commitment of the staff
+                and support from the local community helped the school grow. The first head teacher was Lydia Mumbe,
+                who was key in setting the foundation for discipline and academic excellence.
+            </p>
+        </div>
+        <div>
+            <h5 class="text-uppercase text-center fw-bold" style="color: #a71d2a">Growth and Achievements</h5>
+            <p class="fs-5">
+                Over the years, the school expanded its infrastructure by building more classes, dormitories, and
+                laboratories. It has also introduced new programs such as computer classes, school clubs, and sports.
+            </p>
+        </div>
+        <div>
+            <h5 class="text-uppercase text-center fw-bold" style="color: #a71d2a">Current Status</h5>
+            <p class="fs-5">
+                Today, Karuguru Junior Academy has a population of over 300 students. It is managed by a Board 
+                of Management and the school continues to maintain high academic and co-curricular standards.
+        </div>
+        <div>
+            <h5 class="text-uppercase text-center fw-bold" style="color: #a71d2a">Join Our Story</h5>
+            <p class="fs-5">
+                At this point, our story is still being written and we'd love for your child to be part of it. 
+                Whether you're looking for a strong academic environment, holistic growth, or a place where talent 
+                is nurtured, you'll find it here.
+        </div>
+    </div>  
+</div>
+{% endblock %}
+
+{% block page_image %}
+<div class="image-container position-relative">
+    <img src="{{ url_for('static', filename='images/gate.png') }}" 
+         class="img-fluid w-100" 
+         alt="About Us" 
+         style="max-height: 500px; object-fit: cover;">
+    <div class="position-absolute" style="top: 20px; left: 20px;">
+        <h1 class="text-white fw-bold" style="font-size: 3rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">ABOUT</h1>
+    </div>
+</div>
+{% endblock %}

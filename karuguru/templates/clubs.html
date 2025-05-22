@@ -1,0 +1,178 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section id="welcome" class="py-3 bg-white">
+    <div class="container">
+        <div class="text-start">
+            <h2 class="mb-3 dark-red">Unleashing Potential Beyond the Classroom</h2>
+        </div>
+        <p class="mt-4 text-secondary text-start" style="max-width: 100%;">
+            We believe that learning goes far beyond textbooks. Every student participates in
+            a wide range of clubs and activities designed to nurture creativity, teamwork,
+            leadership, and individual talents. From music and drama to science, 
+            environmental conservation,agriculture, sports, and art, our co-curricular programme offers 
+            something for everyone. These clubs not only complement academic learning but also
+            help students discover new passions, build lifelong skills, and develop a strong 
+            sense of belonging. Participation is encouraged across all grades to promote a 
+            well-rounded, confident learner.
+        </p>
+    </div>
+</section>
+
+<!-- Music and Drama Club -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="dark-red text-start mb-3">Music and Drama Club</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Text column -->
+            <div class="col-12 col-md-8 mb-4 mb-md-0">
+                <p class="text-secondary text-start">
+                    Our Music and Drama Club is a dynamic and creative space where students express
+                    themselves through rhythm, melody, and performance. The club plays a central role
+                    in school life, offering learners the chance to explore their talents through various
+                    musical instruments such as piano, guitar, drums, recorder, and percussion. Guided by
+                    skilled instructors, students develop both vocal and instrumental proficiency while 
+                    building confidence in public performance.Dramatic arts are equally emphasized, with 
+                    learners participating in role play, storytelling, and stage performances that enhance
+                    communication skills and imagination. The club hosts regular showcases and school events,
+                    giving students exciting opportunities to shine and share their talents with the wider community.
+                </p>
+            </div>
+            <!-- Image column -->
+            <div class="col-12 col-md-4">
+                <img src="{{ url_for('static', filename='images/music.png') }}"
+                     class="img-fluid w-100"
+                     alt="Music Club"
+                     style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Agricultural Club -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="dark-red text-start mb-3">Agricultural Club</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Image column -->
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <img src="{{ url_for('static', filename='images/agri.png') }}"
+                     class="img-fluid w-100"
+                     alt="Agricultural Club"
+                     style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            <!-- Text column -->
+            <div class="col-12 col-md-8">
+                <p class="text-secondary text-start">
+                    The Agricultural Club provides students with hands-on experience in sustainable farming
+                    and environmental care. Through engaging, practical activities such as planting vegetables
+                    , maintaining small gardens, and managing compost systems, learners gain a deeper 
+                    understanding of where food comes from and the importance of responsible land use.
+                    Through supervision, students learn key agricultural skills including
+                    soil preparation, crop care, irrigation methods, and organic farming practices. The 
+                    club also promotes environmental stewardship by encouraging recycling, tree planting,
+                    and awareness of climate-smart agriculture.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Journalism Club -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="dark-red text-start mb-3">Journalism Club</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Text column -->
+            <div class="col-12 col-md-8 mb-4 mb-md-0">
+                <p class="text-secondary text-start">
+                    The Journalism Club empowers students to become confident communicators and critical 
+                    thinkers. Members explore the art of storytelling, reporting, and creative writing while
+                    learning how to gather information, conduct interviews, and produce engaging content.
+                    From school newsletters and blogs to event coverage and photography, students gain 
+                    hands-on experience in various media formats
+                </p>
+            </div>
+            <!-- Image column -->
+            <div class="col-12 col-md-4">
+                <img src="{{ url_for('static', filename='images/Jorna.png') }}"
+                     class="img-fluid w-100"
+                     alt="Journalism Club"
+                     style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Home Science Club -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="dark-red text-start mb-3">Home Science Club</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Image column -->
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <img src="{{ url_for('static', filename='images/homes.png') }}"
+                     class="img-fluid w-100"
+                     alt="Home Science"
+                     style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            <!-- Text column -->
+            <div class="col-12 col-md-8">
+                <p class="text-secondary text-start">
+                    This Club equips students with essential life skills through fun in areas such as cooking,
+                    sewing, nutrition, and home management. Members learn how to prepare simple, 
+                    healthy meals, maintain cleanliness and hygiene, and create useful household items 
+                    through crafts and fabric work.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dancing Club -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="dark-red text-start mb-3">Dancing</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Text column -->
+            <div class="col-12 col-md-8 mb-4 mb-md-0">
+                <p class="text-secondary text-start">
+                    The Dancing Club is a lively and energetic space where students express themselves 
+                    through movement and rhythm. Learners are introduced to a variety of dance styles, 
+                    including traditional, contemporary, and cultural dances that celebrate diversity and
+                    creativity.Through regular practice, choreography, and performances at school events, 
+                    members build confidence, coordination, and teamwork. The club promotes physical fitness,
+                    self-expression, and a strong sense of community as students dance their way to joy and 
+                    self-discovery.
+                </p>
+            </div>
+            <!-- Image column -->
+            <div class="col-12 col-md-4">
+                <img src="{{ url_for('static', filename='images/dance.png') }}"
+                     class="img-fluid w-100"
+                     alt="Dancing Club"
+                     style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block page_image %}
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/clubs.png') }}"
+         class="img-fluid w-100"
+         alt="board Image"
+         style="max-height: 500px; object-fit: cover;">
+</div>
+{% endblock %}

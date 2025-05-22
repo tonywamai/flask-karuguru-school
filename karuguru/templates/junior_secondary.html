@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section id="welcome" class="py-2 bg-white">
+    <div class="container">
+        <div class="text-left">
+            <h1 class="dark-red mb-3">Academic Excellence in Junior School</h1>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left;">
+                At Junior School, we set high academic standards while nurturing the love for learning.
+                Students deepen their understanding of core subjects, while developing advanced skills in research,
+                analysis, and critical thinking. Our teaching approach at this stage is inquiry-driven, which
+                promoting curiosity and independent thinking across all disciplines.
+            </p>
+        </div>
+        <div class="text-left">
+            <h5 class="dark-red mb-3">Personalised Learning and Student Support</h5>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left;">
+                Recognising that every student’s journey is unique, we offer personalised learning pathways.
+                Our teachers monitor academic progress closely and offer tailored support, helping each learner
+                to build confidence, overcome challenges, and achieve their personal best.
+            </p>
+        </div>
+        <div class="text-left">
+            <h5 class="dark-red mb-3">Leadership Development and Responsibility</h5>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left;">
+                Students are encouraged to embrace leadership opportunities within the school community.
+                Through student councils, peer mentoring, and community service projects, so that they develop responsibility,
+                initiative, and a commitment to positive change.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="welcome" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="dark-red mb-3">Career Awareness and Skill Building</h2>
+      <p class="text-left text-secondary mb-4">
+        We introduce students to career awareness through project-based learning, workshops, and mentorship programmes.
+        Early exposure to different fields inspires students to think about their futures and equips them with 
+        communication, collaboration, and problem-solving skills.
+      </p>
+      <div class="d-flex justify-content-between">
+        <img src="{{ url_for('static', filename='images/courtJ.png') }}" class="img-fluid" style="max-width: 32%; height: auto;">
+        <img src="{{ url_for('static', filename='images/doctorJ.png') }}" class="img-fluid" style="max-width: 32%; height: auto;">
+        <img src="{{ url_for('static', filename='images/engJ.png') }}" class="img-fluid" style="max-width: 32%; height: auto;">
+      </div>
+    </div>
+  </section>
+  
+{% endblock %} 
+
+{% block page_image %}
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/jss.png') }}" class="img-fluid w-100" alt="board Image" style="max-height: 500px; object-fit: cover;">
+</div>
+{% endblock %}

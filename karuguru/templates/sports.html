@@ -1,0 +1,114 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section id="welcome" class="py-3 bg-white">
+    <div class="container">
+        <div class="text-left">
+            <h2 class="mb-3 dark-red">Building Champions through sports</h2>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left;">
+                Our school offers a rich and inclusive sports programme designed to develop physical fitness, teamwork,
+                discipline, and a lifelong love for healthy living. Students participate in a variety of sports
+                including football, athletics, swimming, basketball, and more.Whether playing competitively or for 
+                recreation, every child is encouraged to discover their strengths and enjoy the thrill of sport.
+                Through inter-house and inter-school competitions, students not only sharpen their athletic skills 
+                but also learn resilience, leadership, and the value of good sportsmanship.
+            </p>
+        </div>       
+    </div>
+</section>
+
+<!-- Football Section -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="dark-red text-start mb-3">Football</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Text column -->
+            <div class="col-12 col-md-8 mb-4 mb-md-0">
+                <p class="text-secondary text-start">
+                    Football is one of the most popular and well-supported sports in our school, with both boys' and girls' 
+                    teams actively participating. Training sessions are held regularly under the guidance of skilled coaches 
+                    who focus on developing technical skills, tactical awareness, and teamwork.Our teams compete in friendly
+                    matches and inter-school tournaments, giving students the opportunity to showcase their talent, build 
+                    confidence, and learn the importance of discipline and sportsmanship. Football at our school is not just 
+                    about competition—it's about building unity, leadership, and a strong school spirit.
+                </p>
+            </div>
+            <!-- Image column -->
+            <div class="col-12 col-md-4">
+                <img src="{{ url_for('static', filename='images/foot.png') }}" 
+                     class="img-fluid w-100"
+                     alt="Football"
+                     style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Basketball Section -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="dark-red text-start mb-3">Basketball</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Image column -->
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <img src="{{ url_for('static', filename='images/bake.png') }}" 
+                     class="img-fluid w-100"
+                     alt="Basketball"
+                     style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            <!-- Text column -->
+            <div class="col-12 col-md-8">
+                <p class="text-secondary text-start">
+                    Basketball is a thriving sport in our school, played with great enthusiasm by both boys and girls. 
+                    Our dedicated teams train regularly to focus on skill development,
+                    teamwork, and strategy.Students participate in internal leagues and inter-school competitions, 
+                    which help boost their confidence, coordination, and leadership qualities. Basketball not only promotes
+                    physical fitness but also teaches resilience, quick decision-making, and respect.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Volleyball Section -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="dark-red text-start mb-3">Volleyball</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Text column -->
+            <div class="col-12 col-md-8 mb-4 mb-md-0">
+                <p class="text-secondary text-start">
+                    Volleyball is a dynamic and engaging sport at our school, embraced by both boys and girls across various
+                    grades. The game encourages quick thinking, precision, and strong communication skills, making it a favourite
+                    for students who enjoy fast-paced team play.Our volleyball teams benefit from structured training sessions
+                    and friendly matches that focus on building technical skills like serving, passing, and spiking, while
+                    also fostering teamwork and trust among players. Whether in friendly competitions or spirited inter-house 
+                    games, volleyball provides a fun and inclusive environment for students to grow both socially and athletically.
+                </p>
+            </div>
+            <!-- Image column -->
+            <div class="col-12 col-md-4">
+                <img src="{{ url_for('static', filename='images/volley.png') }}" 
+                     class="img-fluid w-100"
+                     alt="Volleyball"
+                     style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
+
+{% block page_image %}
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/sports.png') }}" 
+         class="img-fluid w-100" 
+         alt="Sports" 
+         style="max-height: 500px; object-fit: cover;">
+</div>
+{% endblock %}

@@ -1,0 +1,124 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section id="welcome" class="py-3 py-md-5 bg-white">
+    <div class="container px-3 px-md-4">
+        <div class="text-left">
+            <h1 class="dark-red mb-3 fs-2 fs-md-1">Unlocking Potential in Our Upper School</h1>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left; line-height: 1.6;">
+                In the upper school, we provide an inspiring environment where 
+                students in Grades 4 to 6 are empowered to grow into confident, capable learners.
+                This critical stage bridges childhood and adolescence, and we are committed to nurturing 
+                academic excellence, personal responsibility, and leadership potential in every child.
+                Our holistic approach ensures that students continue to feel supported, challenged, and motivated
+                to reach their full potential.
+            </p>
+        </div>
+        <div class="text-left">
+            <h5 class="dark-red mb-3">Upper School Options</h5>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left; line-height: 1.6;">
+                We welcome students into Grades 4, 5, and 6, offering a flexible and supportive environment 
+                tailored to meet the evolving needs of pre-adolescent learners. Our Upper School acts as a transition
+                point between foundational learning in lower primary and the demands of secondary school, 
+                helping students develop the skills and confidence necessary for future academic success.
+            </p>
+        </div>
+        <div class="text-left">
+            <h5 class="dark-red mb-3">Our Approach to Learning</h5>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left; line-height: 1.6;">
+                Learning in the Upper School is driven by curiosity, inquiry, and increasingly independent thought. 
+                Our teachers provide a balance of structured academic instruction and experiential learning opportunities,
+                encouraging students to ask questions, explore topics in depth, and collaborate with their peers. 
+                We value critical thinking, creativity, and problem-solving, equipping students with essential skills
+                for the future.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="py-3 py-md-5 bg-white">
+    <div class="container px-3 px-md-4">
+        <h2 class="dark-red mb-3 fs-3 fs-md-2">Facilities and Learning Environment</h2>
+        <p class="text-left text-secondary mb-4" style="line-height: 1.6;">
+            Students benefit from modern, well-equipped classrooms, inspiring outdoor play areas, libraries, sports fields,
+            and chemical & ICT labs. Our safe and stimulating environment encourages exploration, discovery, and a healthy balance 
+            between academic and recreational activities.
+        </p>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <img src="{{ url_for('static', filename='images/chemU.png') }}" 
+                     class="img-fluid rounded" 
+                     alt="Chemistry Laboratory"
+                     loading="lazy"
+                     style="width: 100%; height: auto;">
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="{{ url_for('static', filename='images/volleyu.png') }}" 
+                     class="img-fluid rounded" 
+                     alt="Volleyball Court"
+                     loading="lazy"
+                     style="width: 100%; height: auto;">
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="{{ url_for('static', filename='images/compU.png') }}" 
+                     class="img-fluid rounded" 
+                     alt="Computer Laboratory"
+                     loading="lazy"
+                     style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-3 py-md-5 bg-white">
+    <div class="container px-3 px-md-4">
+        <div class="text-left">
+            <h2 class="dark-red mb-3 fs-3 fs-md-2">Upper School Curriculum</h2>
+            <p class="mt-4 text-secondary" style="max-width: 100%; text-align: left; line-height: 1.6;">
+                The curriculum is broad and stimulating, offering a rich combination of core academic subjects 
+                and specialist disciplines. Students engage deeply with English, Mathematics, Science, and Social Studies,
+                while also exploring ICT, Visual Arts, Performing Arts, and Physical Education. We place strong 
+                emphasis on literacy, numeracy, research skills, and project-based learning, fostering well-rounded 
+                intellectual development.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="py-3 py-md-5 bg-white">
+    <div class="container px-3 px-md-4">
+        <div class="row align-items-center">
+            <!-- Text column first -->
+            <div class="col-12 col-md-7 order-1 order-md-1">
+                <h2 class="dark-red mb-3 fs-3 fs-md-2">School Community and Parent Involvement</h2>
+                <p class="mt-4 text-secondary" style="text-align: left; line-height: 1.6;">
+                    We believe that education is a partnership between school and home. Our strong sense of community is
+                    supported through regular parent-teacher communication, school events, and opportunities for parental
+                    involvement, creating a supportive network for every child's development.
+                </p>
+            </div>
+            <!-- Image column second -->
+            <div class="col-12 col-md-5 order-2 order-md-2 mb-4 mb-md-0">
+                <img src="{{ url_for('static', filename='images/care.png') }}" 
+                     class="img-fluid rounded" 
+                     alt="Parent Involvement"
+                     loading="lazy"
+                     style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block page_image %}
+<div class="image-container position-relative">
+    <img src="{{ url_for('static', filename='images/upper.png') }}" 
+         class="img-fluid w-100" 
+         alt="Upper School at Karuguru Tech Academy" 
+         style="max-height: 500px; object-fit: cover; border-radius: 8px;"
+         loading="lazy">
+    <div class="position-absolute bottom-0 start-0 w-100 p-3" 
+         style="background: linear-gradient(transparent, rgba(0,0,0,0.5));">
+    </div>
+</div>
+{% endblock %}

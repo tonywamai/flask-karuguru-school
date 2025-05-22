@@ -1,0 +1,111 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="py-3 bg-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <h1 class="text-center dark-red mb-2">School Uniform</h1>
+                <hr class="dark-red mb-4" style="height: 2px;">
+                <p class="text-secondary text-start">
+                    Our school uniform is a symbol of unity, discipline, and pride. 
+                    It reflects our shared values and creates a sense of belonging among students across all levels.
+                    Wearing the uniform fosters equality and reduces distractions.Our well-designed and comfortable uniforms
+                    are tailored to suit each school level, ensuring students feel confident and presentable throughout the day.
+                </p>
+                <p class="text-secondary text-start">All uniform can be found in the school premises</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-4 bg-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h3 class="text-center dark-red mb-2">Junior Secondary uniform</h3>
+                <hr class="dark-red mb-4" style="height: 2px;">
+                <div class="row g-4">
+                    <!-- Left: Official School Uniform -->
+                    <div class="col-12 col-md-6">
+                        <div class="p-3">
+                            <h5 class="dark-red mb-3">Official School Uniform</h5>
+                            <ul class="text-secondary list-unstyled">
+                                <li class="mb-2">Red plain tie(boys), red bow tie(girls)</li>
+                                <li class="mb-2">Navy blue socks(boys), white socks(girls)</li>
+                                <li class="mb-2">Navy blue trousers (boys), checked stripped dress(girls)</li>
+                                <li class="mb-2">black leather shoes</li>
+                                <li class="mb-2">Sky-blue sweater</li>
+                                <li class="mb-2">red blazer</li>
+                                <li class="mb-2">White shirt</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Right: Sports Tracksuit -->
+                    <div class="col-12 col-md-6">
+                        <div class="p-3">
+                            <h5 class="dark-red mb-3">Sports Tracksuit</h5>
+                            <ul class="text-secondary list-unstyled">
+                                <li class="mb-2">Skyblue Jacket</li>
+                                <li class="mb-2">Skyblue trousers</li>
+                                <li class="mb-2">Comfortable sports shoes</li>
+                                <li class="mb-2">White socks</li>
+                                <li class="mb-2">Optional school cap or mavin</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-4 bg-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h3 class="text-center dark-red mb-2">Primary and Upper school uniform</h3>
+                <hr class="dark-red mb-4" style="height: 2px;">
+                <div class="row g-4">
+                    <!-- Left: Official School Uniform -->
+                    <div class="col-12 col-md-6">
+                        <div class="p-3">
+                            <h5 class="dark-red mb-3">Official School Uniform</h5>
+                            <ul class="text-secondary list-unstyled">
+                                <li class="mb-2">Skyblue shorts(boys), Skyblue dress(girls)</li>
+                                <li class="mb-2">Red stripped tie(boys)</li>
+                                <li class="mb-2">Red pullover</li>
+                                <li class="mb-2">white shirt(boys)</li>
+                                <li class="mb-2">Black leather shoes</li>
+                                <li class="mb-2">Red socks</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Right: Sports Tracksuit -->
+                    <div class="col-12 col-md-6">
+                        <div class="p-3">
+                            <h5 class="dark-red mb-3">Sports Tracksuit</h5>
+                            <ul class="text-secondary list-unstyled">
+                                <li class="mb-2">Branded red tracksuit top and bottom</li>
+                                <li class="mb-2">red and green round-neck sports T-shirt</li>
+                                <li class="mb-2">Comfortable sports shoes</li>
+                                <li class="mb-2">White socks</li>
+                                <li class="mb-2">Optional red school cap or mavin</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
+
+{% block page_image %}
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/uniform.png') }}" 
+         class="img-fluid w-100" 
+         alt="School Uniform" 
+         style="max-height: 500px; object-fit: cover;">
+</div>
+{% endblock %}
