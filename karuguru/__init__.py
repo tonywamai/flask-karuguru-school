@@ -1,4 +1,5 @@
-from flask import Flask
+from flask import Flask, send_from_directory
+import os
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin
 
@@ -7,6 +8,11 @@ login_manager = LoginManager()
 
 def create_app():
     app = Flask(__name__)
+      # Google site verification route
+    @app.route('/google6c098f75def709f5.html')
+    def google_verify():
+        return send_from_directory(os.getcwd(), 'google6c098f75def709f5.html')
+    
     app.config['SECRET_KEY'] = 'your_secret_key'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 
