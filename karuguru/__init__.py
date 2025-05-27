@@ -10,6 +10,11 @@ def create_app():
     app = Flask(__name__)
     def robots_txt():
         return send_from_directory(os.getcwd(), 'robots.txt')
+        
+    @app.route('/sitemap.xml')
+    def sitemap():
+        return send_from_directory(os.getcwd(), 'sitemap.xml', mimetype='application/xml')
+        
       # Google site verification route
     @app.route('/google6c098f75def709f5.html')
     def google_verify():
