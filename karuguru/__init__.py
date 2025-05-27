@@ -1,4 +1,4 @@
-from flask import Flask, send_from_directory
+from flask import Flask, send_from_directory, Response
 import os
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin
@@ -8,13 +8,6 @@ login_manager = LoginManager()
 
 def create_app():
     app = Flask(__name__)
-    def robots_txt():
-        return send_from_directory(os.getcwd(), 'robots.txt')
-        
-    @app.route('/sitemap.xml')
-    def sitemap():
-        return send_from_directory(os.getcwd(), 'sitemap.xml', mimetype='application/xml')
-        
       # Google site verification route
     @app.route('/google6c098f75def709f5.html')
     def google_verify():
