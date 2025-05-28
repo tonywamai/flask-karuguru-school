@@ -1,68 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://karuguru.com/</loc>
+        <loc>https://karugurutechacademy.onrender.com/</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/home</loc>
+        <loc>https://karugurutechacademy.onrender.com/home</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/about</loc>
+        <loc>https://karugurutechacademy.onrender.com/about</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/junior_secondary</loc>
+        <loc>https://karugurutechacademy.onrender.com/junior_secondary</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/boarding</loc>
+        <loc>https://karugurutechacademy.onrender.com/boarding</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/admissions</loc>
+        <loc>https://karugurutechacademy.onrender.com/admissions</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/bus_routes</loc>
+        <loc>https://karugurutechacademy.onrender.com/bus_routes</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/school_uniform</loc>
+        <loc>https://karugurutechacademy.onrender.com/school_uniform</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/contact</loc>
+        <loc>https://karugurutechacademy.onrender.com/contact</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/primary_school</loc>
+        <loc>https://karugurutechacademy.onrender.com/primary_school</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/upper_school</loc>
+        <loc>https://karugurutechacademy.onrender.com/upper_school</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/clubs</loc>
+        <loc>https://karugurutechacademy.onrender.com/clubs</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://karuguru.com/sports</loc>
+        <loc>https://karugurutechacademy.onrender.com/sports</loc>
+        <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://karugurutechacademy.onrender.com/download-fees-pdf</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
 </urlset> 
